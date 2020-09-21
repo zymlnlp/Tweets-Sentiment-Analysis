@@ -24,7 +24,7 @@ The dataset for this task can be extensive and adaptive.
 
 ## Requirements:
 
-For the model building part, I use PyTorch as the main machine learning library. 
+For the model construction part, I use PyTorch as the main machine learning library. 
 
 Run the below command to install the required dependencies for this project.
 
@@ -36,9 +36,14 @@ pip install -r requirements.txt
 
 ## Training 
 
-You can train the model by yourself, or use your own sentiment analysis dataset to train the model for your task.
+There is a sample [model file](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/blob/master/model/best_model_state.bin) in the [model](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/tree/master/model) folder mainly for the usage of demo. 
+
+You can also train the model by yourself using different hyper-parameter (e.g. learning rate, number of epochs, etc.) in order to generate better performance. The hyper-parameter can be defined through the command line, and it is also accessible through the [train.py](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/blob/master/code/train.py) file in the [code](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/tree/master/code) folder.
+
+In addition, you can use your preferred sentiment analysis dataset to train the model for your task. Make sure you modify the code or adapt your preferred dataset in consist with the dataset in this project.
+
 ```shell
-python ./code/train.py
+python ./code/train.py 
 ```
 
 
@@ -49,6 +54,8 @@ python ./code/train.py
 You can interact with the sentiment analysis model through the below command line in your terminal.
 
 Before you run the inference file, please check if you have download the [model file](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/blob/master/model/best_model_state.bin) and make sure it is located in the [model](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/tree/master/model) folder.
+
+Note: It could take a while to load the model depends on the hardware you are using.
 
 ```shell
 python ./code/inference.py
