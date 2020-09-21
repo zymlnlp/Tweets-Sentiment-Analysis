@@ -10,7 +10,7 @@ I use this repository to train and test various sentiment analysis model for NLP
 
 This repository consists with Python file and Jupyter Notebook. You can run the Python file to preprocess the data, train the model and perform inference from the command line. The Jupyter Notebook is mainly for interactive exploratory data analysis.
 
-
+![carbon](./others/carbon-0708418.png)
 
 ## Dataset Information:
 
@@ -64,4 +64,8 @@ python ./code/inference.py
  
 
 ## Exploratory Data Analysis
+
+If you want to explore the dataset in details, you can find a [EDA Jupyter Notebook](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/blob/master/data_analysis/Tweet_Sentiment_Exploratory_Data_Analysis.ipynb) in the [data_analysis](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/tree/master/data_analysis) folder.
+
+Going through the dataset in-depth will help you to build better model. 
 
