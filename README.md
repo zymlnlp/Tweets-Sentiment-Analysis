@@ -28,21 +28,27 @@ For the model building part, I use PyTorch as the main machine learning library.
 
 
 
-## Preprocessing
-
-
-
 
 
 ## Training 
 
+You can train the model by yourself, or use your own sentiment analysis dataset to train the model for your task.
+```shell
+python ./code/train.py
+```
 
 
 
 
 ## Inference
 
+You can interact with the sentiment analysis model through the below command line in your terminal
 
+```shell
+python ./code/inference.py
+```
+
+ 
 
 
 
