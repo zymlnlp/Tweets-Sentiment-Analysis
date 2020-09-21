@@ -26,7 +26,11 @@ The dataset for this task can be extensive and adaptive.
 
 For the model building part, I use PyTorch as the main machine learning library. 
 
+Run the below command to install the required dependencies for this project.
 
+```shell
+pip install -r requirements.txt
+```
 
 
 
@@ -40,9 +44,11 @@ python ./code/train.py
 
 
 
-## Inference
+## Inference & Demo
 
-You can interact with the sentiment analysis model through the below command line in your terminal
+You can interact with the sentiment analysis model through the below command line in your terminal.
+
+Before you run the inference file, please check if you have download the [model file](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/blob/master/model/best_model_state.bin) and make sure it is located in the [model](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/tree/master/model) folder.
 
 ```shell
 python ./code/inference.py
