@@ -67,3 +67,12 @@ If you want to explore the dataset in details, you can find a [EDA Jupyter Noteb
 
 Going through the dataset in-depth will help you to build better model. 
 
+
+
+## Others
+
+Please feel free to post feedbacks on the [Issues](https://github.com/zymlnlp/Tweets-Sentiment-Analysis/issues) section. 
+
+I will be constantly maintaining this repository for further practical and research purposes.
+
+
