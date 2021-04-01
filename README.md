@@ -2,7 +2,7 @@
 
 
 
-Sentiment analysis is one of the most topic in Natural Language Processing (NLP). Helping machine to understand the sentiment in human language may benefit other NLP research as well. I am interested in building NLP pipeline and workflow to solve all kinds of real-life problems that relate to language technologies. I tend to include sentiment analysis as one of the key session in the NLP pipeline since it could serve as an important information for tasks like, conversational AI or question-answering  system. I have found out that, in many cases, including extensive sentiments for the language data as the meta-information or sub-information may increase the model performance. 
+Sentiment analysis is one of the most important topic in Natural Language Processing (NLP). Helping machine to understand the sentiment in human language may benefit other NLP research as well. I am interested in building NLP pipeline and workflow to solve all kinds of real-life problems that relate to language technologies. I tend to include sentiment analysis as one of the key session in the NLP pipeline since it could serve as an important information for tasks like, conversational AI or question-answering  system. I have found out that, in many cases, including extensive sentiments for the language data as the meta-information or sub-information may increase the model performance. 
 
 I use this repository to train and test various sentiment analysis model for NLP tasks. You can compare the performance between neural networks based modal or statistical machine learning based model, and establish baselines to improve upon it. 
 
