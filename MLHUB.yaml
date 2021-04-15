@@ -16,7 +16,6 @@ dependencies :
     - torch==1.6.0
     - scikit_learn==0.23.2
   files:
-    - docs/README.md: README.md
     - code/inference.py: demo.R
 commands:
   demo : Demonstrate the model capabilities in one easy session.
