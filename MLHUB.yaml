@@ -16,9 +16,11 @@ dependencies :
     - torch==1.6.0
     - scikit_learn==0.23.2
   files:
-    - code/inference.py: demo.py
+    - code/demo.py
+    - code/inference.py: snetiment.py
     - code/preprocessing.py
     - code/nlp_model.py
     - model/best_model_state.bin: model/best_model_state.bin
 commands:
-  demo : Demonstrate the model capabilities in one easy session.
+  demo      : Demonstrate the model capabilities in one easy session.
+  sentiment : Determin the sentiment of supplied sentences.
