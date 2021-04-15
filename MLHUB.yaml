@@ -3,7 +3,7 @@ meta:
   name         : zynlp
   title        : Tweets sentiment analysis.
   keywords     : python, speech, deep learning
-  version      : 0.0.3
+  version      : 0.0.4
   languages    : python
   license      : mit
   author       : Zeyu.Gao@anu.edu.au
@@ -16,8 +16,8 @@ dependencies :
     - torch==1.6.0
     - scikit_learn==0.23.2
   files:
-    - code/demo.py
-    - code/inference.py: snetiment.py
+    - mlhub/demo.py
+    - mlhub/sentiment.py
     - code/preprocessing.py
     - code/nlp_model.py
     - model/best_model_state.bin: model/best_model_state.bin
