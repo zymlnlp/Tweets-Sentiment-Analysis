@@ -17,5 +17,7 @@ dependencies :
     - scikit_learn==0.23.2
   files:
     - code/inference.py: demo.py
+    - code/preprocessing.py
+    - code/nlp_model.py
 commands:
   demo : Demonstrate the model capabilities in one easy session.
