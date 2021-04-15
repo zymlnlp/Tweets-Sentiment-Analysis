@@ -1,0 +1,22 @@
+--- # https://github.com/zymlnlp/Tweets-Sentiment-Analysis
+meta:
+  name         : zynlp
+  title        : Tweets sentiment analysis.
+  keywords     : python, speech, deep learning
+  version      : 0.0.1
+  languages    : python
+  license      : mit
+  author       : Zeyu.Gao@anu.edu.au
+  url          : https://github.com/zymlnlp/Tweets-Sentiment-Analysis
+dependencies :
+  pip3:
+    - numpy==1.19.1
+    - pandas==1.1.1
+    - transformers==3.1.0
+    - torch==1.6.0
+    - scikit_learn==0.23.2
+  files:
+    - docs/README.md: README.md
+    - code/inference.py: demo.R
+commands:
+  demo : Demonstrate the model capabilities in one easy session.
