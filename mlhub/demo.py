@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Friday 2021-04-16 12:06:40 AEST Graham Williams>
+# Time-stamp: <Tuesday 2021-04-20 15:46:38 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -47,8 +47,6 @@ except Exception:
     print(f"Tried loading '{mfile}'.")
     exit()
 
-mlask()
-
 samples = ["Here's to having a glorious day.",
            "That was a horrible meal.",
            "The chef should be sacked.",
@@ -56,6 +54,13 @@ samples = ["Here's to having a glorious day.",
            "The sun has already risen."]
 
 for input_text in samples:
+
+    mlask(end="\n")
+
+    mlcat(f"{input_text}", """\
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+""")
 
     encoded_tweet = tokenizer.encode_plus(
         input_text,
@@ -70,9 +75,9 @@ for input_text in samples:
 
     input_ids = encoded_tweet['input_ids'].to(device)
     attention_mask = encoded_tweet['attention_mask'].to(device)
-    
+
     output = model(input_ids, attention_mask)
     _, prediction = torch.max(output, dim=1)
-    
-    print(f'\nSentence  : {input_text}')
-    print(f'Sentiment : {sentiment_map[prediction.numpy()[0]]}')
+
+    print(f'\t{sentiment_map[prediction.numpy()[0]]}\n')
+
