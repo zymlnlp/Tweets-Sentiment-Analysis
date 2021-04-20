@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Tuesday 2021-04-20 15:46:38 AEST Graham Williams>
+# Time-stamp: <Tuesday 2021-04-20 16:01:02 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -53,17 +53,17 @@ samples = ["Here's to having a glorious day.",
            "Hi there, hope you are well.",
            "The sun has already risen."]
 
-for input_text in samples:
+for text in samples:
 
     mlask(end="\n")
 
-    mlcat(f"{input_text}", """\
+    mlcat(f"{text}", """\
 Passing the above text on to the pre-built model to determine
 sentiment identifies the sentiment as being:
 """)
 
     encoded_tweet = tokenizer.encode_plus(
-        input_text,
+        text,
         max_length=MAX_LEN,
         add_special_tokens=True,
         return_token_type_ids=False,
