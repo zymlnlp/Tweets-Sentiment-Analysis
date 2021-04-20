@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Tuesday 2021-04-20 16:52:27 AEST Graham Williams>
+# Time-stamp: <Wednesday 2021-04-21 08:36:42 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -57,7 +57,7 @@ elif args.sentence:
 
 text = " ".join(text.splitlines())
 text = " ".join(text.splitlines())
-text = text.replace(". ", "\n")
+text = text.replace(". ", ".\n")
 text = text.splitlines()
 
 sentiment_map = {2: "neutral", 1: "positive", 0: "negative"}
