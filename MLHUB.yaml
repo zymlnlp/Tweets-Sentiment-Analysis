@@ -16,6 +16,7 @@ dependencies :
     - torch==1.6.0
     - scikit_learn==0.23.2
   files:
+    - mlhub/README.md
     - mlhub/demo.py
     - mlhub/sentiment.py
     - code/preprocessing.py
