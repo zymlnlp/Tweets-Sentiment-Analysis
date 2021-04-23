@@ -20,7 +20,7 @@ dependencies :
     - mlhub/sentiment.py
     - code/preprocessing.py
     - code/nlp_model.py
-    - https://cecs.anu.edu.au/nextcloud/s/Xf27qo9zDyaBDGk/download: model/best_model_state.bin
+    - https://cloudstor.aarnet.edu.au/plus/s/EMSV2eebYqinVjh/download: model/best_model_state.bin
 commands:
   demo      : Demonstrate the model capabilities in one easy session.
   sentiment : Determine the sentiment of supplied sentences.
