@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Wednesday 2021-04-21 08:36:42 AEST Graham Williams>
+# Time-stamp: <Friday 2021-04-23 16:13:57 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -99,4 +99,4 @@ if len(text):
         output = model(input_ids, attention_mask)
         _, prediction = torch.max(output, dim=1)
 
-        print(f'"{sentence}",{sentiment_map[prediction.numpy()[0]]}')
+        print(f'{sentiment_map[prediction.numpy()[0]]},{sentence}')
