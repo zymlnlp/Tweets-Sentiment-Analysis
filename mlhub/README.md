@@ -60,27 +60,75 @@ A text file can be specified and each sentence found will be analysed
 separately.
 
 ## Demonstration
+
 ```console
-========
-Bing Map
-========
+$ ml demo zynlp
+=============================================
+Zeyu Gao's Sentiment Analysis Pre-Built Model
+=============================================
 
-Welcome to Bing Maps REST service. This service can find the the
-latitude and longitude coordinates that correspond to location
-information provided  as a query string.
+Welcome to a demo of Zeyu Gao's pre-built model for Sentiment
+Analysis.
 
-Press Enter to continue: 
+Sentiment analysis is an example application of Natural Language
+Processing (NLP). Sentences are assessed by the model to capture their
+sentiment. See https://onepager.togaware.com.
 
-=======
-GEOCODE
-=======
-
- This part is to generate the latitude and longitude coordinates based
-on the query. The result might be several. Here we set the query to
-Priceline Pharmacy Albany Creek. In this case, it will generate a pair
-of coordinates.
+The model load may take a few seconds.
 
 Press Enter to continue: 
 
+================================
+Here's to having a glorious day.
+================================
 
-Latitude: -27.35361099243164 Longitude: 152.96832275390625
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+
+	positive
+
+Press Enter to continue: 
+
+=========================
+That was a horrible meal.
+=========================
+
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+
+	negative
+
+Press Enter to continue: 
+
+==========================
+The chef should be sacked.
+==========================
+
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+
+	negative
+
+Press Enter to continue: 
+
+============================
+Hi there, hope you are well.
+============================
+
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+
+	positive
+
+Press Enter to continue: 
+
+==========================
+The sun has already risen.
+==========================
+
+Passing the above text on to the pre-built model to determine
+sentiment identifies the sentiment as being:
+
+	neutral
+
+```
