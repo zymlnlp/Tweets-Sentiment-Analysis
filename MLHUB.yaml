@@ -3,7 +3,7 @@ meta:
   name         : zynlp
   title        : Tweets sentiment analysis.
   keywords     : python, speech, deep learning
-  version      : 0.0.8
+  version      : 0.0.9
   languages    : python
   license      : mit
   author       : Zeyu.Gao@anu.edu.au, Graham.Williams@anu.edu.au
