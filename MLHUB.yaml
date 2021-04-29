@@ -7,6 +7,7 @@ meta:
   languages    : python
   license      : mit
   author       : Zeyu.Gao@anu.edu.au, Graham.Williams@anu.edu.au
+  url          : https://github.com/gjwgit/zynlp
 dependencies :
   pip3:
     - numpy==1.19.1
