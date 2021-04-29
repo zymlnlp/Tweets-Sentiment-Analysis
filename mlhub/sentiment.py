@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Friday 2021-04-23 16:13:57 AEST Graham Williams>
+# Time-stamp: <Thursday 2021-04-29 12:46:18 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -15,6 +15,7 @@
 
 import os
 import argparse
+import re
 
 import torch
 import warnings
@@ -56,8 +57,7 @@ elif args.sentence:
 # for analysis.
 
 text = " ".join(text.splitlines())
-text = " ".join(text.splitlines())
-text = text.replace(". ", ".\n")
+text = re.sub("\\. +", ".\n", text)
 text = text.splitlines()
 
 sentiment_map = {2: "neutral", 1: "positive", 0: "negative"}
@@ -68,15 +68,15 @@ MAX_LEN = 256
 
 # Load the model.
 
-mfile = "./model/best_model_state.bin"
+mfile = "model/best_model_state.bin"
 
 try:
     model = SentimentClassifier(n_classes=3)
     model.load_state_dict(torch.load(mfile,
                                      map_location=torch.device('cpu')))
 except Exception:
-    print("No model found. Bad model file or model not yet trained.")
-    print(f"Tried loading '{mfile}'.")
+    print("Missing model file, or bad model file, or model not yet trained.")
+    print(f"Tried loading '{os.getcwd()}/{mfile}'.")
     exit()
 
 if len(text):
