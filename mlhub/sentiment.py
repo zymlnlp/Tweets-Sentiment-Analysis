@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Thursday 2021-04-29 12:46:18 AEST Graham Williams>
+# Time-stamp: <Saturday 2021-05-15 21:09:44 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the MIT License.
@@ -38,7 +38,7 @@ option_parser.add_argument(
     help='sentence to analyse')
 
 option_parser.add_argument(
-    '--file', '-f',
+    '--input', '-i',
     help='path to a text file to analyse sentences')
 
 args = option_parser.parse_args()
@@ -48,8 +48,8 @@ args = option_parser.parse_args()
 # ----------------------------------------------------------------------
 
 text = ""
-if args.file:
-    text = open(os.path.join(get_cmd_cwd(), args.file), "r").read()
+if args.input:
+    text = open(os.path.join(get_cmd_cwd(), args.input), "r").read()
 elif args.sentence:
     text = " ".join(args.sentence)
 
